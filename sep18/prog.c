@@ -40,7 +40,7 @@ int main(){
 
     for(int index=0;index<len;index++){
         printf("[%d]: %s\n",index,array[index]);
-    }
+    
 
     return 0;
 }
