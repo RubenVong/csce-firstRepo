@@ -29,9 +29,9 @@ int main(int argc, char *argv[]){
 void showList(Node *head){
     while(head!=NULL){
         printf("-------------------------------\n");
-        printf("Node: %p\n",&head);
+        printf("Node: %p\n",head);
         printf("Value: %d\n",head->value);
-        printf("Node: %p\n",head->next);
+        printf("Next Node: %p\n",head->next);
         head = head->next;
     }
 
