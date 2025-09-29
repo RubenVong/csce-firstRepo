@@ -1,0 +1,13 @@
+Modify the program to move the code from main() and create the following 
+functions:
+
+
+loadArray - Takes the file name as an argument  (You are free to add other 
+arguments or a return type)
+
+
+showArray -  Takes the array as an argument  (You are free to add other 
+arguments or a return type)
+
+
+Upload your modified prog.c code by Monday (Sep 22) at 11:59pm
