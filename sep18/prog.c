@@ -3,6 +3,8 @@
 #include <string.h>
 #define MAXLINE 100
 
+void showArray(char *dest[], int len);
+
 int main(){
     /*char array[MAXLINE];
 
@@ -43,5 +45,10 @@ int main(){
     
 
     return 0;
+}
+void showArray(char *dest[], int len) { 
+    for(int index=0;index<len;index++) {
+        printf("[%d]: %s\n",index,dest[index]);
+    }
 }
 
