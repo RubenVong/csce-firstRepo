@@ -6,5 +6,27 @@
 
 int main(int argc, char const *argv[]){
 
+    pid_t pid;
+    int status;
+
+    char *args[]={"ls", "-l", NULL};
+
+    pid = fork();
+
+    if(pid == -1){
+        printf("Unable to Fork\n");
+        exit(1);
+    }
+
+    if(pid == 0){
+        printf("%d: Child Procees: %d\n", getppid(), getpid());
+        execvp(args[0],args);
+    }else{
+        printf("%d: Parent Process: %d\n", getppid(), getpid());
+        waitpid(pid,&status,0);
+        printf("Child Finished\n");
+    }
     return 0;
 }
+
+//READ 4,5,6
