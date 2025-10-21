@@ -1,0 +1,4 @@
+total 20
+-rw-r--r-- 1 student student     0 Oct 16 10:03 listing
+-rw-r--r-- 1 student student   468 Oct 16 10:01 proc.c
+-rwxr-xr-x 1 student student 16208 Oct 16 10:02 shell
